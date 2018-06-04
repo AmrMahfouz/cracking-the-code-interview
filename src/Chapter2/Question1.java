@@ -1,7 +1,6 @@
 package Chapter2;
 
 import java.util.HashSet;
-import java.util.LinkedList;
 import java.util.Set;
 
 /**
