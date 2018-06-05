@@ -8,12 +8,7 @@ import java.util.Set;
  * FOLLOW UP
  * How would you solve this problem if a temporary buffer is not allowed?
  */
-public class Question1 {
-
-    static class LinkedListNode {
-        int val;
-        LinkedListNode next;
-    }
+class Question1 {
 
     public void removeDuplicatesS1(LinkedListNode list) {
         Set<Integer> prevValues = new HashSet<>();
@@ -47,16 +42,7 @@ public class Question1 {
 
     public static void main(String[] args) {
         Question1 question1 = new Question1();
-        LinkedListNode list = new LinkedListNode();
-        list.val = 1;
-        list.next = new LinkedListNode();
-        list.next.val = 2;
-        list.next.next = new LinkedListNode();
-        list.next.next.val = 3;
-        list.next.next.next = new LinkedListNode();
-        list.next.next.next.val = 1;
-        list.next.next.next.next = new LinkedListNode();
-        list.next.next.next.next.val = 4;
+        LinkedListNode list = LinkedList.createList(new int[]{1, 2, 3, 4, 5, 3, 5, 7});
         //question1.removeDuplicatesS1(list);
         question1.removeDuplicatesS2(list);
         LinkedListNode p1 = list;
