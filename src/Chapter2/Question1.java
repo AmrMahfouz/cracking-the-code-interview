@@ -45,11 +45,7 @@ class Question1 {
         LinkedListNode list = LinkedList.createList(new int[]{1, 2, 3, 4, 5, 3, 5, 7});
         //question1.removeDuplicatesS1(list);
         question1.removeDuplicatesS2(list);
-        LinkedListNode p1 = list;
-        while (p1 != null) {
-            System.out.println(p1.val);
-            p1 = p1.next;
-        }
+        LinkedList.printList(list);
     }
 
 }

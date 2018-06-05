@@ -80,10 +80,7 @@ class Question2 {
 //        LinkedList kthToLast = question2.kthToLastWithListLength(list, 4, 7);
 //        LinkedListNode kthToLast = question2.returnKthToLast(list, 4);
         LinkedListNode kthToLast = question2.kthToLast(list, 4, new Index());
-        while (kthToLast != null) {
-            System.out.println(kthToLast.val);
-            kthToLast = kthToLast.next;
-        }
+        LinkedList.printList(kthToLast);
 
     }
 

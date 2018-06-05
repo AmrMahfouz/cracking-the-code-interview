@@ -17,4 +17,25 @@ class LinkedList {
         return list;
     }
 
+    public static void printList(LinkedListNode head) {
+        LinkedListNode p = head;
+        while (p != null) {
+            System.out.println(p.val);
+            p = p.next;
+        }
+    }
+
+    public static LinkedListNode getNodeByIndex(LinkedListNode head, int index) {
+        LinkedListNode p = head;
+        int i = 0;
+        while (p != null) {
+            if (index == i) {
+                return p;
+            }
+            i++;
+            p = p.next;
+        }
+        return null;
+    }
+
 }
