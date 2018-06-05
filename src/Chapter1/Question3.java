@@ -9,7 +9,7 @@ package Chapter1;
  * Input: "Mr John Smith JJ, 13
  * Output: "Mr%2eJohn%2eSmith"
  */
-public class Question3 {
+class Question3 {
 
     public String URLfify(String url, int length) {
         char[] chars = url.toCharArray();

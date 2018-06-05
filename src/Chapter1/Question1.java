@@ -7,7 +7,7 @@ import java.util.Set;
  * Is Unique: Implement an algorithm to determine if a string has all unique characters. What if you
  * cannot use additional data structures?
  */
-public class Question1 {
+class Question1 {
 
     public boolean isUniqueS1(String s) {
         Set<Character> chars = new HashSet<>();

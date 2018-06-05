@@ -6,7 +6,7 @@ package Chapter1;
  * "compressed" string would not become smaller than the original string, your method should return
  * the original string. You can assume the string has only uppercase and lowercase letters (a - z).
  */
-public class Question6 {
+class Question6 {
 
     public String compress(String s) {
         if (s.length() < 2) {

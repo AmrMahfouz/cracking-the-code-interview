@@ -12,7 +12,7 @@ import java.util.Map;
  * Input: Tact Coa
  * Output: True (permutations:"taco cat'; "atco cta'; etc.)
  */
-public class Question4 {
+class Question4 {
 
     public boolean palindromePermutationS1(String s) {
         Map<Character, Integer> charCount = new HashMap<>();

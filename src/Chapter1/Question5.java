@@ -10,7 +10,7 @@ package Chapter1;
  * pale, bale -) true
  * pale, bae -) false
  */
-public class Question5 {
+class Question5 {
 
     public boolean OneWay(String s1, String s2) {
         int s1Length = s1.length();
