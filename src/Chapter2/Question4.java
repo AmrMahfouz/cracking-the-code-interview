@@ -9,7 +9,7 @@ package Chapter2;
  * Input: 3 -) 5 -) 8 -) 5 -) 113 -) 2 -) 1 [partition = 5]
  * Output: 3 -) 1 -) 2 -) 113 -) 5 -) 5 -) 8
  */
-public class Question4 {
+class Question4 {
 
     public LinkedListNode partition(LinkedListNode head, int val) {
         LinkedListNode p = head;

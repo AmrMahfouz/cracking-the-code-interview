@@ -8,7 +8,7 @@ package Chapter2;
  * Input: the node c from the linked list a - >b- >c - >d - >e- >f
  * Result: nothing is returned, but the new linked list looks like a->b->d->e->f
  */
-public class Question3 {
+class Question3 {
 
     public void deleteMiddleNodeGivenList(LinkedListNode head) {
         LinkedListNode current = head;
