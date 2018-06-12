@@ -47,4 +47,24 @@ class TreeNode {
         }
     }
 
+    public static TreeNode createBinaryTree(int[] values) {
+        return createBinaryTreeHelper(values, 0, values.length - 1);
+    }
+
+    private static TreeNode createBinaryTreeHelper(int[] values, int start, int end) {
+        if (start > end) {
+            return null;
+        }
+        if (start == end) {
+            return new TreeNode(values[start]);
+        }
+        int middle = (start + end) / 2;
+        TreeNode root = new TreeNode(values[middle]);
+        TreeNode left = createBinaryTreeHelper(values, start, middle - 1);
+        TreeNode right = createBinaryTreeHelper(values, middle + 1, end);
+        root.left = left;
+        root.right = right;
+        return root;
+    }
+
 }
