@@ -64,8 +64,8 @@ class Question3 {
 
     public static void main(String[] args) {
         Question3 question3 = new Question3();
-//        List<List<TreeNode>> levels = question3.listOfDepthsS1(TreeNode.createBinaryTree(new int[]{1, 2, 3, 4, 5, 6, 7, 8, 9}));
-        List<List<TreeNode>> levels = question3.listOfDepthsS2(TreeNode.createBinaryTree(new int[]{1, 2, 3, 4, 5, 6, 7, 8, 9}));
+//        List<List<TreeNode>> levels = question3.listOfDepthsS1(TreeNode.createBalancedBinaryTree(new int[]{1, 2, 3, 4, 5, 6, 7, 8, 9}));
+        List<List<TreeNode>> levels = question3.listOfDepthsS2(TreeNode.createBalancedBinaryTree(new int[]{1, 2, 3, 4, 5, 6, 7, 8, 9}));
 
         for (List<TreeNode> level : levels) {
             for (TreeNode node : level) {

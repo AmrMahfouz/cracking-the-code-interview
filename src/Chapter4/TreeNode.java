@@ -1,7 +1,6 @@
 package Chapter4;
 
-import java.util.LinkedList;
-import java.util.Queue;
+import java.util.*;
 
 class TreeNode {
 
@@ -47,7 +46,7 @@ class TreeNode {
         }
     }
 
-    public static TreeNode createBinaryTree(int[] values) {
+    public static TreeNode createBalancedBinaryTree(int[] values) {
         return createBinaryTreeHelper(values, 0, values.length - 1);
     }
 
@@ -64,6 +63,27 @@ class TreeNode {
         TreeNode right = createBinaryTreeHelper(values, middle + 1, end);
         root.left = left;
         root.right = right;
+        return root;
+    }
+
+    public static TreeNode createRandomBinaryTree(int[] values) {
+        List<TreeNode> nodes = new ArrayList<>();
+        for (int value : values) {
+            nodes.add(new TreeNode(value));
+        }
+        Random random = new Random();
+        TreeNode root = nodes.remove(random.nextInt(nodes.size()));
+        TreeNode prevNode = root;
+        while (!nodes.isEmpty()) {
+            int index = random.nextInt(nodes.size());
+            if (index % 2 == 0) {
+                prevNode.right = nodes.remove(random.nextInt(nodes.size()));
+                prevNode = prevNode.right;
+            } else {
+                prevNode.left = nodes.remove(index);
+                prevNode = prevNode.left;
+            }
+        }
         return root;
     }
 
