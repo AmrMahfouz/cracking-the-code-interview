@@ -8,17 +8,6 @@ import java.util.Stack;
  */
 class Question6 {
 
-    private static class TreeNodeWithParent {
-        TreeNodeWithParent left;
-        TreeNodeWithParent right;
-        TreeNodeWithParent parent;
-        int value;
-
-        public TreeNodeWithParent(int value) {
-            this.value = value;
-        }
-    }
-
     public TreeNodeWithParent inorderSuccessorS1(TreeNodeWithParent node) {
         if (node == null) {
             return null;
